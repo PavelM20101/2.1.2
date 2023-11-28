@@ -15,6 +15,9 @@ public class AppConfig {
     @Scope("prototype")
     public Cat getCat(){
         Cat cat = new Cat();
+        cat.setAge(2);
+        cat.setName("Tishka");
+        cat.setColor("Brown");
         return cat;
     }
 }
